@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: nginx
+  annotations:
+    http.port: "8002"
+spec:
+  backend:
+    serviceName: nginx
+    servicePort: 80
